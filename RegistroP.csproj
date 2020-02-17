@@ -7,16 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="icono de buscar.png" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Habanero.Faces" Version="3.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="icono de buscar.png" />
+    <Folder Include="DAL\Scripts\" />
   </ItemGroup>
 
 </Project>

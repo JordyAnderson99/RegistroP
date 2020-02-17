@@ -1,0 +1,28 @@
+﻿<Window x:Class="RegistroP.UI.Consultar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RegistroP.UI"
+        mc:Ignorable="d"
+        Title="Consultar" Height="450" Width="903">
+    <Grid Margin="0,0,10,0">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF0E818D"/>
+                <GradientStop Color="#FF1FD6E8" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Desde" HorizontalAlignment="Left" Margin="74,35,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Label Content="Hasta" HorizontalAlignment="Left" Margin="251,35,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <DatePicker x:Name="DesdeDatePicker" HorizontalAlignment="Left" Margin="27,73,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="HastaDatePicker" HorizontalAlignment="Left" Margin="198,73,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="FiltroCombox" HorizontalAlignment="Left" Margin="386,73,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Filtro" HorizontalAlignment="Left" Margin="424,39,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="CriterioTextBox" HorizontalAlignment="Left" Margin="544,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Height="22"/>
+        <Label Content="Criterio" HorizontalAlignment="Left" Margin="585,42,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="ConsultarButton" Content="Consultar" HorizontalAlignment="Left" Margin="739,49,0,0" VerticalAlignment="Top" Height="42" Width="91" FontSize="14" FontWeight="Bold" Click="ConsultarButton_Click"/>
+        <DataGrid x:Name="ConsultaDataGrid" Margin="0,118,0,10" Background="#FFCAE8E5" BorderBrush="#FF637D97"/>
+
+    </Grid>
+</Window>

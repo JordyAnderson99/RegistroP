@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RegistroP"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="441">
+        Title="MainWindow" Height="386" Width="392">
     <Window.Foreground>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="Black"/>
@@ -18,27 +18,14 @@
             <GradientStop Color="#FF0091FF" Offset="1"/>
         </LinearGradientBrush>
     </Window.Background>
-    <Grid Margin="0,0,38,0">
-        <Label Content="ID:" HorizontalAlignment="Left" Margin="43,56,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
-        <Label Content="Persona" HorizontalAlignment="Left" Margin="43,124,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
-        <Label Content="Comentario" HorizontalAlignment="Left" Margin="42,161,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
-        <Label Content="Monto" HorizontalAlignment="Left" Margin="43,192,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
-        <Label Content="Balance" HorizontalAlignment="Left" Margin="43,224,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
-        <Label Content="Fecha " HorizontalAlignment="Left" Margin="44,93,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
-        <Button Content="Nuevo" HorizontalAlignment="Left" Margin="48,307,0,0" VerticalAlignment="Top" Height="44" Width="56" Background="#FFDDDFE6" FontSize="14" FontWeight="Bold" Click="Button_Click"/>
-        <Button Content="Guardar" HorizontalAlignment="Left" Margin="142,307,0,0" VerticalAlignment="Top" Height="44" Width="56" Background="#FFDDDFE6" FontSize="14" FontWeight="Bold" Click="Button_Click"/>
-        <Button Content="Eliminar" HorizontalAlignment="Left" Margin="236,307,0,0" VerticalAlignment="Top" Height="44" Width="56" Background="#FFDDDFE6" FontSize="14" FontWeight="Bold"/>
-        <TextBox x:Name="FechaDatePicker" HorizontalAlignment="Left" Margin="170,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="IdTextBox" HorizontalAlignment="Left" Margin="170,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="IdPersonaTextBox" HorizontalAlignment="Left" Margin="170,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="ComentarioTextBox" HorizontalAlignment="Left" Margin="170,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="MontoTextBox" HorizontalAlignment="Left" Margin="170,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Buscar" HorizontalAlignment="Left" Margin="334,43,0,0" VerticalAlignment="Top" Height="44" Width="56" FontSize="14" FontWeight="Bold" HorizontalContentAlignment="Center">
-            <Button.Background>
-                <ImageBrush ImageSource="icono de buscar.png"/>
-            </Button.Background>
-        </Button>
-        <TextBox x:Name="BalancTextBox" HorizontalAlignment="Left" Margin="170,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF073838" Offset="1"/>
+                <GradientStop Color="#FF16DEDE" Offset="0.158"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="PersonaButton" Content="Persona" HorizontalAlignment="Left" Height="57" Margin="138,90,0,0" VerticalAlignment="Top" Width="95" FontWeight="Bold" FontSize="14" FontFamily="Book Antiqua" Click="PersonaButton_Click"/>
+        <Button x:Name="ConsultarButton" Content="Consultar" HorizontalAlignment="Left" Margin="132,185,0,0" VerticalAlignment="Top" Height="53" Width="108" FontSize="14" FontWeight="Bold" Click="ConsultarButton_Click" FontFamily="Book Antiqua"/>
     </Grid>
 </Window>
